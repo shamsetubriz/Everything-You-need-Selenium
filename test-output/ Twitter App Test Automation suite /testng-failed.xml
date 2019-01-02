@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ Twitter App Test Automation suite ]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Twitter App TEST(failed)">
+    <parameter name="password" value="1234"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="userId" value="shams"/>
+    <parameter name="url" value="https://twitter.com/"/>
+    <classes>
+      <class name="com.parameter.ParameterTest">
+        <methods>
+          <include name="twitterLoginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.parameter.ParameterTest -->
+    </classes>
+  </test> <!-- Twitter App TEST(failed) -->
+</suite> <!-- Failed suite [ Twitter App Test Automation suite ] -->

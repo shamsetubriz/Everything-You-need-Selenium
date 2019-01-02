@@ -1,0 +1,15 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG features script " parallel="false">
+
+
+    <test name = "TestNG Features TEST">
+        <classes>
+            <class name="testNG.TestNGFeature"/>
+            <class name="restNG.TestNGGooleTitle"/>
+            <class name="testNG.TestNGSample"/>
+        </classes>
+    </test>
+
+</suite>

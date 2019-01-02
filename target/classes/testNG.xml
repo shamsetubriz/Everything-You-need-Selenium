@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name=" Twitter App Test Automation suite "
+	parallel="methods" thread-count="5">
+	<test name="Twitter App TEST">
+
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://twitter.com/" />
+		<parameter name="userId" value="shams" />
+		<parameter name="password" value="1234" />
+
+
+		<classes>
+			<class name="com.parameter.ParameterTest" />
+			<class name="com.testNG.TestNGFeature">
+
+				<methods>
+					<exclude name="TestMethodeNameToExclude" />
+				</methods>
+
+			</class>
+			<class name="com.testNG.TestNGGoogleTitleTest" />
+			<class name="com.testNG.TestNGSample" />
+		</classes>
+	</test>
+
+</suite>
