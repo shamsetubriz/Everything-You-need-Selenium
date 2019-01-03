@@ -30,8 +30,8 @@ public class JavaScriptExecutor {
 
 		driver.get("https://www.freecrm.com"); // enter URL
 
-		driver.findElement(By.name("username")).sendKeys("naveenk");
-		driver.findElement(By.name("password")).sendKeys("test@1234");
+		driver.findElement(By.name("username")).sendKeys("shamsmuhammad");
+		driver.findElement(By.name("password")).sendKeys("dhaka123123");
 		// driver.findElement(By.xpath("//input[contains(@type,'submit')]")).click();
 
 		// executeScript -- to execute JavaScript code

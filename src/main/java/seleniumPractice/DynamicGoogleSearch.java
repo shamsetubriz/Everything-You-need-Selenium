@@ -25,7 +25,7 @@ public class DynamicGoogleSearch {
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("testing");
 		
 		//we need to use the findElements() method because we have to get the entire list of suggestion. 
-		//Use the descendant function to create the custom xpath becase we need to get all the children of <li tag 
+		//Use the descendant function to create the custom xpath because we need to get all the children of <li tag 
 		
 		List<WebElement> list = driver.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='sbtc']"));
 		
